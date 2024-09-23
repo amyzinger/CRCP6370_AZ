@@ -113,4 +113,25 @@ h2 {
     margin-top: 0;
 }
 
+/* Basic dropdown styling */
+#role-selector {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+    background-color: white; /* Revert to default white background */
+    cursor: pointer;
+}
 
+/* Optional focus state */
+#role-selector:focus {
+    border-color: #228B22;
+    outline: none;
+}
+
+/* Placeholder option styling */
+#role-selector option[disabled] {
+    color: #999;
+}

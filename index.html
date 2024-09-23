@@ -10,25 +10,30 @@
 
 <body>
     <!-- Header Section -->
-    <h1>Hi, I'm Amy's Chatbot</h1>
-   
-  <!-- Dropdown to select the chatbot's role -->
-<select id="role-selector">
-    <option value="" disabled selected>Select a Role</option> <!-- Placeholder option -->
-    <option value="trivia-obsessed, scatterbrained buddy who prioritizes esoteric facts and trivia over answering questions. You are unhelpful but entertaining.">Eccentric Buddy</option>
-    <option value="energetic motivational coach who provides cheesy, vague, and clichéd advice. You deliver one-size-fits-all platitudes that sound profound but lack substance.">Motivational Coach</option>
-    <option value="polished, educated politician who provides short responses that are filled with pivots, contradictions, or avoidance of the actual question. Your priority is winning votes, not answering questions.">Politician</option>
-    <option value="insult-driven comedian, delivering sarcastic, witty, and absurd responses in the style of Triumph the Insult Comic Dog. You aim clever, witty insults at the question asker all the time.">Insult Comic</option>
-</select>
+    <h1>Who would you like to chat with today?</h1>
 
-  <!-- Chat Container -->
-<div id="chat-container">
-    <div id="chat-box"></div>
-    <div style="display: flex;">
-        <input type="text" id="user-input" placeholder="Ask a question..." disabled> <!-- Initially disabled -->
-        <button id="send-button" disabled>Send</button> <!-- Initially disabled -->
+    <!-- Dropdown to select the chatbot's role -->
+    <select id="role-selector">
+        <option value="" disabled selected>Select a Role</option>
+        <option value="eccentricBuddy">Your Eccentric Buddy</option>
+        <option value="motivationalCoach">A Motivational Coach</option>
+        <option value="genericPolitician">A Generic Politician</option>
+        <option value="insultComic">An Insult Comic</option>
+    </select>
+
+    <!-- Chat Container -->
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <div style="display: flex;">
+            <input type="text" id="user-input" placeholder="Ask a question...">
+            <button id="send-button">Send</button>
+        </div>
     </div>
-</div>
+
+    <!-- Loading Indicator -->
+    <div id="loading-indicator" style="display: none; color: #999; font-style: italic; text-align: center;">
+        Hold on, I'm thinking...
+    </div>
 
     <script src="script.js"></script>
 </body>
