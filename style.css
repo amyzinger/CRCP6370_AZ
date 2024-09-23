@@ -75,16 +75,30 @@ body {
 
 /* Different styles for user and bot messages */
 .user {
-    background-color: #228B22;
+    background-color: #228B22; /* User's message in green */
     color: white;
     align-self: flex-end;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .bot {
     background-color: #f1f1f1;
     color: #333;
     align-self: flex-start;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
+
+/* Styling for the role label */
+.role-label {
+    font-size: 0.75em;  /* Smaller font size */
+    font-style: italic; /* Italicized */
+    color: #eeeeee;     /* Slightly lighter color than the message */
+}
+
 
 h1, h2 {
     text-align: center;
@@ -98,3 +112,5 @@ h2 {
     color: #666;
     margin-top: 0;
 }
+
+
